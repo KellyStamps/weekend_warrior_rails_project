@@ -1,0 +1,18 @@
+<h3>New Cat Form</h3>
+
+<%= form_tag cats_path do %>
+  <label>Name:</label><br>
+  <%= text_field_tag :name %><br>
+
+  <label>Age:</label><br>
+  <%= text_field_tag :age %><br>
+
+  <label>Motto:</label><br>
+  <%= text_field_tag :motto %><br>
+
+  <label>Color:</label><br>
+  <%= text_field_tag :color %><br>
+
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <input type="submit" value="Submit">
+<% end %>

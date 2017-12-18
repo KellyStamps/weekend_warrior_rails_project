@@ -1,0 +1,7 @@
+<h1>Dogs!</h1>
+
+<% @dogs.each do |dog| %>
+  <h3><%= link_to dog.name, dog_path(dog) %></h3>
+<%end%>
+<h4><%= link_to "Create a New Dog Profile", '/dogs/new' %></h4>
+<%=link_to "Back to Animals Main Page", '/'%>

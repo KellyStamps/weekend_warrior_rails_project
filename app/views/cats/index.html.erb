@@ -1,0 +1,7 @@
+<h1>Cats!</h1>
+
+<% @cats.each do |cat| %>
+  <h3><%= link_to cat.name, cat_path(cat) %></h3>
+<%end%>
+<h4><%= link_to "Create a New Cat Profile", '/cats/new' %></h4>
+<%=link_to "Back to Animals Main Page", '/'%>

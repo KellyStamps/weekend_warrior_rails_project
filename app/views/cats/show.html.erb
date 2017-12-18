@@ -1,0 +1,8 @@
+<h3><%=@cat.name%></h3>
+<p>Motto: "<%= @cat.motto %>"</p>
+<p>Age: <%= @cat.age %></p>
+<p>Color: <%= @cat.color %></p>
+
+<h4><%=link_to "Edit Information", "/cats/#{@cat.id}/edit"%> </h4>
+
+<%=link_to "Back to Cats", cats_path%>

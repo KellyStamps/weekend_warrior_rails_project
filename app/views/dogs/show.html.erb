@@ -1,0 +1,8 @@
+<h3><%=@dog.name%></h3>
+<p>Motto: "<%= @dog.motto %>"</p>
+<p>Age: <%= @dog.age %></p>
+<p>Breed: <%= @dog.breed %></p>
+
+<h4><%=link_to "Edit Information", "/dogs/#{@dog.id}/edit"%> </h4>
+
+<%=link_to "Back to Dogs", dogs_path%>
